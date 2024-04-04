@@ -2,7 +2,28 @@ package aula10;
 
 import java.util.Scanner;
 
-public class desafio01 {
+public class exemplo01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int[] num1 = new int[4];
+        num1[0] = 10;
+        num1[1] = 20;
+        num1[2] = 30;
+        num1[3] = 40;
+
+        System.out.println("Primeiro elemento: " + num1[0]);
+
+        scanner.close();
+    }
+
+}
+-------------------------------------------------------------------------------------------------------
+package aula10;
+
+import java.util.Scanner;
+
+public class exemplo01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -31,5 +52,36 @@ public class desafio01 {
 
         scanner.close();
     }
+}
 
+-----------------------------------------------------------------------------------------------------
+package aula10;
+import java.util.Scanner;
+public class exemplo02 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite um primeiro numero: ");
+        int nmr1 = scanner.nextInt();
+
+        System.out.println("Digite um segundo numero: ");
+        int nmr2 = scanner.nextInt();
+
+        System.out.println("Digite um terceiro numero: ");
+        int nmr3 = scanner.nextInt();
+
+        System.out.println("Digite um quarto numero: ");
+        int nmr4 = scanner.nextInt();
+
+        System.out.println("Digite um quinto numero: ");
+        int nmr5 = scanner.nextInt();
+
+        int[] numeros = { nmr1, nmr2, nmr3, nmr4, nmr5 };
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("Sequência de números digitados: " + numeros[i]);
+        }
+
+        scanner.close();
+
+    }
 }
