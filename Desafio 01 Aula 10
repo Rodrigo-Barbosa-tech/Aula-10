@@ -1,0 +1,20 @@
+package aula10;
+import java.util.Scanner;
+public class desafio01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int[] numeros = new int[5];
+        numeros[0] = 5;
+        numeros[1] = 10;
+        numeros[2] = 15;
+        numeros[3] = 20;
+        numeros[4] = 25;
+
+        int soma = (numeros[0] + numeros[1] + numeros[2] + numeros[3] + numeros[4]);
+
+        System.out.println("A soma dos 5 numeros inteiros é: " + soma);
+
+        scanner.close();
+    }
+}
